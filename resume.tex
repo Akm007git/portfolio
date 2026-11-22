@@ -1,0 +1,167 @@
+% Updated version - Nov 2026 (one-page layout)
+% Replace every [X] / [N] placeholder with a REAL number or delete the clause. Do not invent metrics.
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & \textbf{\small #2} \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & \textbf{\small #2} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in, itemsep=0pt, topsep=2pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \textsc{Anup Kumar Mahata}} \\ \vspace{3pt}
+    Electronics City, Bangalore \\ \vspace{4pt}
+    \small
+    \faPhone\ \textbf{+91-6297230771} \quad
+    \faEnvelope\ \textbf{anupkumarmahata2022@outlook.com} \\
+    \faLinkedin\ \href{https://www.linkedin.com/in/anup-kumar-mahata-76952b246/}{LinkedIn} \quad
+    \faGithub\ \href{https://github.com/Akm007git}{GitHub}
+    \vspace{-8pt}
+\end{center}
+
+%-----------SUMMARY-----------
+\section{Professional Summary}
+\small{AI Engineer with 2+ years of experience building enterprise Generative AI systems: RAG pipelines, multi-agent workflows (LangGraph, Google ADK) and MCP-based tool integrations. Currently automating end-to-end IT ticket processing with AI agents connected to ServiceNow and Dynatrace. Strong backend and SQL/Oracle foundation; 800+ DSA problems solved.}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Infosys}{Sept 2024 -- Present}
+{Specialist Programmer -- Generative AI}{Bangalore, India}
+\resumeItemListStart
+\resumeItem{Building multi-agent systems with Google ADK and LangGraph (branching, looping, human-in-the-loop approvals) to automate the ticket lifecycle end to end: triage, enrichment, routing and closure}
+\resumeItem{Developed MCP servers and custom tools exposing ServiceNow and Dynatrace operations (ticket CRUD, incident, problem and alert data) to LLM agents for tool-calling and orchestration}
+\resumeItem{Built a knowledge graph linking services, incidents and runbooks, and fed Dynatrace observability data into agents to ground root-cause suggestions beyond plain vector retrieval}
+\resumeItem{Architected enterprise RAG pipelines with LangChain, FAISS and Elasticsearch for low-latency retrieval over large document sets}
+\resumeItem{Contributed Node.js REST APIs and Oracle/PL-SQL logic (procedures, functions, triggers) for enterprise insurance systems, integrating AI services with legacy back ends}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Autonomous AI Job Search Assistant} $|$ Python, Gemini API, MCP, GitHub Actions, LaTeX}
+{\href{https://github.com/Akm007git/ai-job-search}{\faGithub\ Code}}
+\resumeItemListStart
+\resumeItem{Built an autonomous job search and application agent using the Gemini API and MCP tool architecture for end-to-end application automation}
+\resumeItem{Engineered a multi-portal scraper (LinkedIn, Instahyre) aggregating 170+ fresh tech postings daily into structured analytics workbooks}
+\resumeItem{Implemented a one-command tailored LaTeX CV/cover letter generator with prompt-injection guards and ATS layout verification; scheduled twice daily via GitHub Actions with SMTP retry and email delivery}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{AI Travel Assistant} $|$ LangChain, LangGraph, RAG, FAISS}
+{\href{https://github.com/Akm007git}{\faGithub\ Code}}
+\resumeItemListStart
+\resumeItem{Developed a multi-agent travel assistant integrating flight, hotel, weather and payment APIs, with graph-based orchestration in LangGraph (conditional branching, looping, state management)}
+\resumeItem{Added RAG with vector embeddings for personalized responses, and human-in-the-loop checkpoints for payments and approvals}
+\resumeItem{Hardened tool execution with retries, timeouts and response validation so a failed flight, hotel or payment call degrades gracefully instead of breaking the session}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=0pt, topsep=2pt]
+\small{\item{
+\textbf{Languages:} Python, JavaScript, SQL, PL/SQL, C++ \\
+\vspace{2pt}
+\textbf{Generative AI:} LLMs, RAG, LangChain, LangGraph, Google ADK, MCP, Agentic Workflows, Knowledge Graphs, Prompt Engineering, NLP, FAISS, Elasticsearch \\
+\vspace{2pt}
+\textbf{Enterprise \& Backend:} ServiceNow, Dynatrace, Node.js, Express.js, REST APIs, Oracle, PostgreSQL, MongoDB \\
+\vspace{2pt}
+\textbf{Cloud \& Tools:} AWS (learning), Git, GitHub Actions, Postman, Jupyter Notebook \\
+\vspace{2pt}
+\textbf{Concepts:} Data Structures \& Algorithms, System Design, Object-Oriented Programming
+}}
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Ideal Institute of Engineering}{Aug 2021 -- Jul 2024}
+{B.Tech, Electronics and Communication Engineering | CGPA: 8.1}{Kalyani, West Bengal}
+
+\resumeSubheading
+{Birla Institute of Technology}{Jul 2018 -- Jul 2021}
+{Diploma, Electronics and Telecommunication Engineering | CGPA: 8.8}{Kolkata, West Bengal}
+
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+\resumeSubHeadingListStart
+\resumeItemListStart
+\resumeItem{\textbf{2nd Prize}, Infosys GitHub Copilot Hackathon (2024)}
+\resumeItem{Solved \textbf{800+ DSA problems} on LeetCode, GeeksforGeeks and other platforms}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
