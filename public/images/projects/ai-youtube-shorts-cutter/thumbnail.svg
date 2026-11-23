@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+  <defs>
+    <linearGradient id="bgShorts" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#08070d"/>
+      <stop offset="50%" stop-color="#120c1a"/>
+      <stop offset="100%" stop-color="#1c0f24"/>
+    </linearGradient>
+    <linearGradient id="purpleGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bgShorts)"/>
+  <circle cx="850" cy="280" r="280" fill="#a855f7" opacity="0.12" filter="blur(90px)"/>
+  <circle cx="280" cy="400" r="220" fill="#ec4899" opacity="0.08" filter="blur(80px)"/>
+
+  <!-- Canvas Container -->
+  <g transform="translate(130, 80)">
+    <rect width="940" height="515" rx="16" fill="#110d18" stroke="rgba(255, 255, 255, 0.1)" stroke-width="1.5"/>
+
+    <!-- Window top bar -->
+    <circle cx="36" cy="32" r="6" fill="#ef4444" opacity="0.8"/>
+    <circle cx="56" cy="32" r="6" fill="#f59e0b" opacity="0.8"/>
+    <circle cx="76" cy="32" r="6" fill="#10b981" opacity="0.8"/>
+    <text x="110" y="37" fill="#71717a" font-family="ui-monospace, monospace" font-size="13">ai-youtube-shorts-cutter // autonomous-agent-dag &amp; speech-sync</text>
+    <line x1="0" y1="56" x2="940" y2="56" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+
+    <!-- Left side: Agentic AI DAG Pipeline -->
+    <g transform="translate(40, 85)">
+      <text x="0" y="24" fill="#c084fc" font-family="ui-monospace, monospace" font-size="12" font-weight="600">AGENTIC AI MULTI-TOOL ORCHESTRATION</text>
+      <text x="0" y="55" fill="#ffffff" font-family="ui-sans-serif, system-ui" font-weight="700" font-size="20">Autonomous Tool DAG</text>
+
+      <!-- DAG Steps -->
+      <g transform="translate(0, 75)">
+        <rect width="320" height="48" rx="8" fill="#191322" stroke="rgba(192, 132, 252, 0.3)" stroke-width="1"/>
+        <circle cx="22" cy="24" r="5" fill="#a855f7"/>
+        <text x="36" y="22" fill="#f4f4f5" font-family="ui-monospace, monospace" font-size="12" font-weight="600">01. Transcript &amp; ASR Alignment</text>
+        <text x="36" y="38" fill="#a1a1aa" font-family="ui-sans-serif, system-ui" font-size="11">Speech-to-text token timestamps (Frame = Time × FPS)</text>
+
+        <rect y="60" width="320" height="48" rx="8" fill="#191322" stroke="rgba(236, 72, 153, 0.3)" stroke-width="1"/>
+        <circle cx="22" cy="84" r="5" fill="#ec4899"/>
+        <text x="36" y="82" fill="#f4f4f5" font-family="ui-monospace, monospace" font-size="12" font-weight="600">02. Viral Hook &amp; Narrative Arc</text>
+        <text x="36" y="98" fill="#a1a1aa" font-family="ui-sans-serif, system-ui" font-size="11">Emotional tension analysis for sub-40s retention curve</text>
+
+        <rect y="120" width="320" height="48" rx="8" fill="#191322" stroke="rgba(59, 130, 246, 0.3)" stroke-width="1"/>
+        <circle cx="22" cy="144" r="5" fill="#3b82f6"/>
+        <text x="36" y="142" fill="#f4f4f5" font-family="ui-monospace, monospace" font-size="12" font-weight="600">03. Code Synthesis &amp; Remotion</text>
+        <text x="36" y="158" fill="#a1a1aa" font-family="ui-sans-serif, system-ui" font-size="11">React treated as headless video compiler</text>
+
+        <rect y="180" width="320" height="48" rx="8" fill="#191322" stroke="rgba(16, 185, 129, 0.3)" stroke-width="1"/>
+        <circle cx="22" cy="204" r="5" fill="#10b981"/>
+        <text x="36" y="202" fill="#f4f4f5" font-family="ui-monospace, monospace" font-size="12" font-weight="600">04. Self-Healing Error Recovery</text>
+        <text x="36" y="218" fill="#a1a1aa" font-family="ui-sans-serif, system-ui" font-size="11">IPv4/IPv6 failover, symlink repair, hook debugging</text>
+      </g>
+    </g>
+
+    <!-- Center Phone Display (1080x1920 Short Preview) -->
+    <g transform="translate(395, 75)">
+      <rect width="210" height="395" rx="26" fill="#000000" stroke="rgba(255, 255, 255, 0.25)" stroke-width="2"/>
+      <rect x="6" y="6" width="198" height="383" rx="22" fill="#2d152a"/>
+
+      <!-- Hook Banner -->
+      <rect x="25" y="30" width="160" height="26" rx="6" fill="#e11d48"/>
+      <text x="105" y="47" fill="#ffffff" font-family="ui-sans-serif, system-ui" font-weight="700" font-size="10" text-anchor="middle" letter-spacing="0.5">🔥 3-SECOND HOOK PEAK</text>
+
+      <!-- Video Clip Foreground -->
+      <rect x="18" y="85" width="174" height="115" rx="10" fill="#140f1a" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+      <circle cx="105" cy="142" r="16" fill="rgba(255,255,255,0.15)"/>
+      <polygon points="101,134 113,142 101,150" fill="#ffffff"/>
+
+      <!-- ASR Word-Level Timed Highlight Captions -->
+      <g transform="translate(25, 235)">
+        <rect width="160" height="64" rx="8" fill="rgba(0,0,0,0.7)"/>
+        <text x="80" y="26" fill="#ffffff" font-family="ui-sans-serif, system-ui" font-weight="800" font-size="12" text-anchor="middle">HOW DID HE</text>
+        <text x="80" y="48" fill="#facc15" font-family="ui-sans-serif, system-ui" font-weight="900" font-size="15" text-anchor="middle">PULL THIS OFF?!</text>
+      </g>
+      <text x="105" y="325" fill="#a1a1aa" font-family="ui-monospace, monospace" font-size="9" text-anchor="middle">ASR Word Token: [24.12s - 25.04s]</text>
+
+      <!-- Progress bar -->
+      <rect x="20" y="360" width="170" height="4" rx="2" fill="rgba(255, 255, 255, 0.2)"/>
+      <rect x="20" y="360" width="105" height="4" rx="2" fill="#ec4899"/>
+    </g>
+
+    <!-- Right side: Core Concepts Callouts -->
+    <g transform="translate(640, 85)">
+      <text x="0" y="24" fill="#ec4899" font-family="ui-monospace, monospace" font-size="12" font-weight="600">GENERATIVE AI CORE</text>
+      <text x="0" y="55" fill="#ffffff" font-family="ui-sans-serif, system-ui" font-weight="700" font-size="20">Creative Intelligence</text>
+
+      <g transform="translate(0, 75)">
+        <rect width="260" height="66" rx="10" fill="#181220" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <text x="16" y="26" fill="#f4f4f5" font-family="ui-sans-serif, system-ui" font-weight="600" font-size="12">Narrative Arc Analysis</text>
+        <text x="16" y="44" fill="#a1a1aa" font-family="ui-sans-serif, system-ui" font-size="11">Detects high-status celebrity</text>
+        <text x="16" y="58" fill="#a1a1aa" font-family="ui-sans-serif, system-ui" font-size="11">hooks &amp; curiosity spikes</text>
+
+        <rect y="78" width="260" height="66" rx="10" fill="#181220" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <text x="16" y="104" fill="#f4f4f5" font-family="ui-sans-serif, system-ui" font-weight="600" font-size="12">Cognitive Guardrails</text>
+        <text x="16" y="122" fill="#a1a1aa" font-family="ui-sans-serif, system-ui" font-size="11">Fact-Forcing GateGuard blocks</text>
+        <text x="16" y="136" fill="#a1a1aa" font-family="ui-sans-serif, system-ui" font-size="11">destructive bash operations</text>
+
+        <rect y="156" width="260" height="66" rx="10" fill="#181220" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+        <text x="16" y="182" fill="#f4f4f5" font-family="ui-sans-serif, system-ui" font-weight="600" font-size="12">Headless Video Synthesis</text>
+        <text x="16" y="200" fill="#a1a1aa" font-family="ui-sans-serif, system-ui" font-size="11">Bun + FFmpeg hardware export</text>
+        <text x="16" y="214" fill="#a1a1aa" font-family="ui-sans-serif, system-ui" font-size="11">delivering 1080x1920 MP4s</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Title banner -->
+  <text x="130" y="640" fill="#f4f4f5" font-family="ui-sans-serif, system-ui" font-weight="700" font-size="20">AI YouTube Shorts Cutter</text>
+  <text x="430" y="640" fill="#a1a1aa" font-family="ui-monospace, monospace" font-size="14">Agentic AI • Gen AI Peak Detection • ASR Sync • Remotion • FFmpeg</text>
+</svg>

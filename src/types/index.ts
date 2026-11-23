@@ -10,6 +10,24 @@ export interface TechGroup {
   technologies: string[];
 }
 
+export interface ProjectHighlightPoint {
+  title: string;
+  detail: string;
+}
+
+export interface ProjectHighlightSection {
+  title: string;
+  badge?: string;
+  description: string;
+  points: ProjectHighlightPoint[];
+}
+
+export interface ComparisonRow {
+  dimension: string;
+  traditional: string;
+  thisSystem: string;
+}
+
 export interface Project {
   slug: string;
   title: string;
@@ -30,6 +48,12 @@ export interface Project {
   architecture: string;
   techStack: TechGroup[];
   outcomes: string[];
+  aiHighlights?: ProjectHighlightSection[];
+  comparison?: {
+    traditionalTitle: string;
+    thisSystemTitle: string;
+    rows: ComparisonRow[];
+  };
 }
 
 export interface ExperienceItem {
