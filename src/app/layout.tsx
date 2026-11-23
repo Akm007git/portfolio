@@ -40,6 +40,13 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: 'Anup Kumar Mahata', url: 'https://github.com/Akm007git' }],
   creator: 'Anup Kumar Mahata',
+  icons: {
+    icon: [
+      { url: '/icon.svg', type: 'image/svg+xml' },
+    ],
+    shortcut: '/icon.svg',
+    apple: '/apple-icon.svg',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_US',

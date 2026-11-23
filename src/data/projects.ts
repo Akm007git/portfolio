@@ -235,8 +235,8 @@ export const projects: Project[] = [
     ],
     featured: false,
     status: 'Completed',
-    githubUrl: 'https://github.com/Akm007git/React-2023/tree/main/src/components',
-    liveUrl: undefined,
+    githubUrl: 'https://github.com/Akm007git/React-2023/tree/main/',
+    liveUrl: 'https://akm-videostreaming-projects.netlify.app/',
     image: '/images/projects/youtube-clone/thumbnail.svg',
     metrics: [
       { label: 'Video Feed', value: 'Category Chips' },
